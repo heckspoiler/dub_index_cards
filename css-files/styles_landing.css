@@ -1,0 +1,29 @@
+
+
+/*font-family: 'ABeeZee', sans-serif;
+font-family: 'Abel', sans-serif;*/
+
+
+
+
+/*general styles*/
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+.landing__page {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    background: radial-gradient(90.32% 90.32% at 84.2% 10.91%, #AFEBE7 0%, rgba(175, 235, 231, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+
+}
