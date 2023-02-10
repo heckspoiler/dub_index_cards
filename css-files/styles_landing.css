@@ -29,7 +29,7 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 }
 
-/*landing page icons styles*/
+/*landing page background icons styles*/
 
 .landing__page--icons {
     position: absolute;
@@ -39,7 +39,7 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 .fa-alien-8bit {
     position: absolute;
-    font-size: 30em;
+    font-size: 40vw;
     margin-top: 20vh;
     color: #9dda96;
     transform: rotate(15deg);
@@ -48,8 +48,24 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 .fa-planet-ringed {
     position: absolute;
-    font-size: 20rem;
+    font-size: 30vw;
     color: #9dda96;
     margin-left: 57vw;
     transform: skew(10deg, 1deg);
+}
+
+/*landing page text styles*/
+
+.landing__page--intro--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.landing__page--intro--text p {
+    font-size: calc(1em + 0.5vh);
+ 
+    width: 80%;
+    text-align: center;
 }
