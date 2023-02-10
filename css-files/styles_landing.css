@@ -84,6 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4vh;
 
 }
 
@@ -92,3 +93,68 @@ body {
     width: 80%;
     text-align: center;
 }
+
+
+/* button styling */
+
+.landing__page--button--section {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.landing__page--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 4px #504d4d40;
+    font-size: 1.2rem;
+}
+
+.login__button {
+    background-color: #CFEBCC;
+    opacity: 80%;
+}
+
+.signup__button {
+    background-color: rgba(121, 159, 217, 0.6);
+}
+
+.login__button:hover {
+    
+    opacity: 100%;
+}
+
+.signup__button:hover {
+    background-color: rgba(121, 159, 217, 1);
+}
+
+
+.landing__page--button--icons {
+    display: flex;
+    font-size: 2.5em;
+    gap: 7vw;
+    margin-top: 3vh;
+
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-google {
+    background: -webkit-linear-gradient(#4285f4, #4285f4 25%, #34a853 25%, #34a853 50%, #fbbc05 50%, #fbbc05 75%, #ea4335 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
