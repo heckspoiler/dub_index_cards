@@ -40,7 +40,7 @@ body {
 
 .fa-alien-8bit {
     position: absolute;
-    font-size: 30vw;
+    font-size: 22vw;
     margin-top: 20vh;
     margin-left: 5vh;
     color: blue;
@@ -51,11 +51,12 @@ body {
 
 .fa-planet-ringed {
     position: absolute;
-    font-size: 30vw;
-    color: #6c62b6;
+    font-size: 20vw;
+    color: blue;
+    margin-top: 13vh;
     margin-left: 57vw;
     opacity: 40%;
-    transform: skew(10deg, 1deg);
+    
 }
 
 .fa-brackets-curly {
@@ -63,21 +64,42 @@ body {
     font-size: 20vw;
     color: blue;
     opacity: 50%;
-    margin-left: 60vw;
-    margin-top: 70vh;
+    margin-left: 70vw;
+    margin-top: 50vh;
     transform: rotate(40deg);
 }
 
 .fa-flask {
     position: absolute;
-    font-size: 25vw;
-    margin-top: 70vh;
+    font-size: 18vw;
+    margin-top: 60vh;
     color: blue;
     opacity: 45%;
     margin-left: 5vw;
     transform: rotate(-30deg);
 
 }
+
+/* landing page title animation*/ 
+
+.landing__page--title {
+    position: relative;
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+
+@keyframes slide-in {
+    0% {
+      top: -100px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+
 /*landing page text styles*/
 
 .landing__page--intro--text {
