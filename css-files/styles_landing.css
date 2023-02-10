@@ -36,7 +36,23 @@ body {
     position: absolute;
     z-index: -1000;
     opacity: 80%;
+    
 }
+
+  @keyframes floatalien {
+    0% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-10px);
+  
+    }
+    100% {
+      transform: translateY(0);
+      
+    }
+  }
 
 .fa-alien-8bit {
     position: absolute;
@@ -46,8 +62,18 @@ body {
     color: blue;
     opacity: 30%;
     transform: rotate(15deg);
+    animation: floatalien 4s ease-in-out infinite;
 
 }
+
+@keyframes floatsaturn {
+    from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(50px, -75px);
+      }
+  }
 
 .fa-planet-ringed {
     position: absolute;
@@ -56,6 +82,7 @@ body {
     margin-top: 13vh;
     margin-left: 57vw;
     opacity: 40%;
+    animation: floatsaturn 4s ease-in-out infinite;
     
 }
 
@@ -64,7 +91,7 @@ body {
     font-size: 20vw;
     color: blue;
     opacity: 50%;
-   
+    overflow: hidden;
     margin-top: 50vh;
     transform: rotate(40deg);
 }

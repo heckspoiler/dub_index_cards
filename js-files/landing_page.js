@@ -3,24 +3,43 @@ const title = document.querySelector(".landing__page--title");
 const text = document.querySelector(".landing__page--intro--text--p");
 const alien = document.querySelector(".fa-alien-8bit");
 const brackets = document.querySelector(".fa-brackets-curly");
+const saturn = document.querySelector(".fa-planet-ringed");
+const flask = document.querySelector(".fa-flask ");
+const buttons = document.querySelector(".landing__page--button--section");
 
 window.onload = function () {
   setTimeout(function () {
     title.style.animation = "slide-in 1s ease-in-out forwards";
   }, 500);
   alien.style.left = "-200px";
-  alien.style.transform = "rotate(-140deg)";
+  alien.style.transform = "rotate(-80deg)";
   setTimeout(function () {
     alien.style.transition = "left 1s ease-out, transform 1s ease-out";
     alien.style.left = "5vh";
     alien.style.transform = "rotate(-40deg)";
-  }, 400);
+  }, 500);
   brackets.style.left = "100vw";
   brackets.style.transform = "rotate(160deg)";
   setTimeout(function () {
     brackets.style.transition = "left 1s ease-out, transform 1s ease-in";
     brackets.style.left = "70vw";
   }, 800);
+  saturn.style.left = "50vw";
+  setTimeout(() => {
+    saturn.style.transition = "left 1.2s ease-in-out";
+    saturn.style.left = "10vw";
+  }, 800);
+  flask.style.left = "-60vw";
+  flask.style.transform = "rotate(20deg)";
+  setTimeout(() => {
+    flask.style.transition = "left 1.4s ease-out";
+    flask.style.left = "12vw";
+  }, 900);
+  buttons.style.opacity = "0";
+  setTimeout(() => {
+    buttons.style.transition = "opacity 1.5s ease-in-out";
+    buttons.style.opacity = "1";
+  }, 1500);
 };
 
 document.addEventListener("DOMContentLoaded", function () {
