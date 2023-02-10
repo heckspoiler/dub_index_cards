@@ -1,4 +1,11 @@
 
 h1 {
     font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: black;
+    font-size: calc(2rem + 5vw);
+
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

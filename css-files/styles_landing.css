@@ -18,12 +18,31 @@ body {
 .landing__page {
     font-family: 'Abel', sans-serif;
     display: flex;
-    background: radial-gradient(90.32% 90.32% at 84.2% 10.91%, #AFEBE7 0%, rgba(175, 235, 231, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: rgb(2,173,135);
+background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743942645417542) 70%, rgba(25,174,204,0.743942645417542) 100%);
     height: 100vh;
     width: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
+
+
+}
+
+
+/*landing page icons styles*/
+
+.landing__page--icons {
+    position: absolute;
+    z-index: -1000;
+    opacity: 80%;
+}
+
+.fa-alien-8bit {
+    position: absolute;
+    font-size: 30em;
+    margin-top: 20vh;
+    color: #9dda96;
+    transform: rotate(15deg);
 
 }
