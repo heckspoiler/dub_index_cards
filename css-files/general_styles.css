@@ -7,5 +7,6 @@ h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-shadow: 1px 1px 1px rgba(184, 217, 176, 0.1);
+    text-shadow: 1px 1px 1px white;
   }
   

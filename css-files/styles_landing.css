@@ -13,13 +13,14 @@ body {
     padding: 0;
     display: flex;
     background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 
 .landing__page {
     font-family: 'Abel', sans-serif;
     display: flex;
-    background: rgb(2,173,135);
-background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743942645417542) 70%, rgba(25,174,204,0.743942645417542) 100%);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    opacity: 85%;
     height: 100vh;
     width: 100%;
     align-items: center;
@@ -39,9 +40,11 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 .fa-alien-8bit {
     position: absolute;
-    font-size: 40vw;
+    font-size: 30vw;
     margin-top: 20vh;
-    color: #9dda96;
+    margin-left: 5vh;
+    color: blue;
+    opacity: 30%;
     transform: rotate(15deg);
 
 }
@@ -49,11 +52,32 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 .fa-planet-ringed {
     position: absolute;
     font-size: 30vw;
-    color: #9dda96;
+    color: #6c62b6;
     margin-left: 57vw;
+    opacity: 40%;
     transform: skew(10deg, 1deg);
 }
 
+.fa-brackets-curly {
+    position: absolute;
+    font-size: 20vw;
+    color: blue;
+    opacity: 50%;
+    margin-left: 60vw;
+    margin-top: 70vh;
+    transform: rotate(40deg);
+}
+
+.fa-flask {
+    position: absolute;
+    font-size: 25vw;
+    margin-top: 70vh;
+    color: blue;
+    opacity: 45%;
+    margin-left: 5vw;
+    transform: rotate(-30deg);
+
+}
 /*landing page text styles*/
 
 .landing__page--intro--text {
@@ -65,7 +89,6 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 .landing__page--intro--text p {
     font-size: calc(1em + 0.5vh);
- 
     width: 80%;
     text-align: center;
 }
