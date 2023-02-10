@@ -29,7 +29,6 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
 
 }
 
-
 /*landing page icons styles*/
 
 .landing__page--icons {
@@ -45,4 +44,12 @@ background: radial-gradient(circle, rgba(2,173,135,1) 0%, rgba(175,235,224,0.743
     color: #9dda96;
     transform: rotate(15deg);
 
+}
+
+.fa-planet-ringed {
+    position: absolute;
+    font-size: 20rem;
+    color: #9dda96;
+    margin-left: 57vw;
+    transform: skew(10deg, 1deg);
 }
