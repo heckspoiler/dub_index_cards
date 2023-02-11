@@ -357,7 +357,9 @@ body {
  /* sign up section */
 
  .landing__page--signup--section {
-    z-index: 9999;
+    z-index: 10000; 
+    visibility: hidden;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,6 +369,8 @@ body {
     border: 4px solid white;
     height: 80vh;
     width: 70vw;
+    margin-top: auto;
+    margin-left: auto;
 
  }
 
@@ -407,6 +411,17 @@ body {
     background-color: white;
     border: white;
     border-radius: 5px;
-    height: 4vh;
+    height: 5vh;
+    width: 20vw;
+}
+
+.sign__up--button {
     width: 15vw;
+    cursor: pointer;
+
+}
+
+.sign__up--button:hover, .sign__up--button:active, .log__in--button:hover, .log__in--button:active {
+    background-color:rgba(121, 159, 217, 1);
+
 }

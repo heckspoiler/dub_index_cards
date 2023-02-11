@@ -9,6 +9,8 @@ const buttons = document.querySelector(".landing__page--button--section");
 const logInSection = document.querySelector(".landing__page--login--section");
 const logInButton = document.querySelector(".login__button");
 const cross = document.querySelector(".cross");
+const signUpSection = document.querySelector(".landing__page--signup--section");
+const signUpButton = document.querySelector(".sign__up--button");
 
 window.onload = function () {
   setTimeout(function () {
@@ -89,6 +91,30 @@ cross.addEventListener("click", function (event) {
     logInSection.style.opacity = "0";
     setTimeout(() => {
       logInSection.style.opacity = "0";
+    }, 1000);
+  }
+});
+
+signUpButton.addEventListener("click", function () {
+  if (signUpSection.style.visibility === "hidden") {
+    signUpSection.style.visibility = "visible";
+    signUpSection.style.transition = "opacity 1s ease-in-out";
+    signUpSection.style.opacity = "1";
+  } else {
+    signUpSection.style.transition = "opacity 1s ease-in-out";
+    signUpSection.style.opacity = "0";
+    setTimeout(() => {
+      signUpSection.style.visibility = "hidden";
+    }, 1000);
+  }
+});
+
+cross.addEventListener("click", function (event) {
+  if (signUpSection.style.visibility === "visible") {
+    signUpSection.style.visibility = "hidden";
+    signUpSection.style.opacity = "0";
+    setTimeout(() => {
+      signUpSection.style.opacity = "0";
     }, 1000);
   }
 });
