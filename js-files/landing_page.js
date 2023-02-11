@@ -72,13 +72,23 @@ document.addEventListener("DOMContentLoaded", function () {
 logInButton.addEventListener("click", function () {
   if (logInSection.style.visibility === "hidden") {
     logInSection.style.visibility = "visible";
+    logInSection.style.transition = "opacity 1s ease-in-out";
+    logInSection.style.opacity = "1";
   } else {
-    logInSection.style.visibility = "hidden";
+    logInSection.style.transition = "opacity 1s ease-in-out";
+    logInSection.style.opacity = "0";
+    setTimeout(() => {
+      logInSection.style.visibility = "hidden";
+    }, 1000);
   }
 });
 
 cross.addEventListener("click", function (event) {
   if (logInSection.style.visibility === "visible") {
     logInSection.style.visibility = "hidden";
+    logInSection.style.opacity = "0";
+    setTimeout(() => {
+      logInSection.style.opacity = "0";
+    }, 1000);
   }
 });
