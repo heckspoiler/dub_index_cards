@@ -67,12 +67,18 @@ body {
 }
 
 @keyframes floatsaturn {
-    from {
+    0% {
         transform: translate(0, 0);
       }
-      to {
-        transform: translate(50px, -75px);
-      }
+ 
+      
+    50% {
+        transform: rotate(40deg)
+    
+    }
+    100% {
+        transform: rotate(0deg);
+    }
   }
 
 .fa-planet-ringed {
@@ -82,9 +88,25 @@ body {
     margin-top: 13vh;
     margin-left: 57vw;
     opacity: 40%;
-    animation: floatsaturn 4s ease-in-out infinite;
+    animation: floatsaturn 8s ease-in-out infinite;
     
 }
+
+
+@keyframes curly {
+    0% {
+        transform: translate(0, 0);
+      }
+ 
+      
+    50% {
+        transform: rotate(40deg);
+    
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
 
 .fa-brackets-curly {
     position: absolute;
@@ -94,7 +116,24 @@ body {
     overflow: hidden;
     margin-top: 50vh;
     transform: rotate(40deg);
+    animation: curly 10s ease-out infinite;
+    
 }
+
+@keyframes flask {
+    0% {
+        transform: translate(0, 0);
+      }
+ 
+      
+    50% {
+        transform: rotate(-40deg);
+    
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
 
 .fa-flask {
     position: absolute;
@@ -104,6 +143,7 @@ body {
     opacity: 45%;
     margin-left: 5vw;
     transform: rotate(-30deg);
+    animation: flask 8s ease-in-out infinite;
 
 }
 
