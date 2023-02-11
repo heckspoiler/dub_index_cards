@@ -44,12 +44,17 @@
             </section>
         </section>
         <section class="landing__page--login--section">
-            <form action="/tutorial/action.html">
-                <label for="fullname">Username</label><br />
-                <input type="text" id="username" name="username"><br />
+            <h2 class="login__section--title">Welcome back you smart person!</h2>
+            <form action="/tutorial/action.html" >
+                <label for="username">Username</label ><br />
+                <input type="text" id="username" name="username" maxlength="16" placeholder="Email or Username" required><br />
                 <label for="password">Password</label><br />
-                <input type="password" id="password" name="password"><br />
+                <input type="password" id="password" name="password" placeholder="㋛㋛㋛㋛㋛" required><br />
+                
+                <input type="radio" id="logged__in--radio">
+                <label for="logged__in--radio">Keep me logged in</label>
                 <input type="submit" value="Login">
+                
               </form>
         </section>
     </section>

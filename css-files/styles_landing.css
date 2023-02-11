@@ -117,6 +117,7 @@ body {
     margin-top: 50vh;
     transform: rotate(40deg);
     animation: curly 10s ease-out infinite;
+    z-index: -1000;
     
 }
 
