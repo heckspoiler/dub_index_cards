@@ -31,7 +31,8 @@
 
         </section>
         <section class="landing__page--intro--text">
-            <p class="landing__page--intro--text--p">You want to improve on the go?<br> Create your own index cards and have them ready where ever your are!
+            <p class="landing__page--intro--text--p">You want to improve on the go?<br> Create your own index cards and
+                have them ready where ever your are!
             </p>
         </section>
         <section class="landing__page--button--section">
@@ -47,25 +48,31 @@
             <h2 class="login__section--title">Welcome back you smart person!</h2>
             <form action="/tutorial/action.html" class="login_section--form">
                 <label for="username">Username</label><br />
-                <input type="text" id="username" name="username" maxlength="16" placeholder="Email or Username" required><br />
+                <input type="text" id="username" name="username" maxlength="16" placeholder="  Email or Username"
+                    required><br />
                 <label for="password">Password</label><br />
-                <input type="password" id="password" name="password" placeholder="○○○○○○○○○" required><br />
-                <input type="checkbox" id="show-password">
-                <label for="show-password">Show password</label>
+                <input type="password" id="password" name="password" placeholder="  ○○○○○○○○○" required><br />
+                <section class="show__password--section">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password">Show password</label>
+                </section>
+                <section class="logged__in--section">
                 <input type="checkbox" id="logged__in--radio">
                 <label for="logged__in--radio">Keep me logged in</label>
-                <input type="submit" value="Login">
+                </section>
+                <input type="submit" value="Login" class="log__in--button">
+               
             </form>
         </section>
     </section>
     <script>
         const passwordInput = document.getElementById("password");
         const showPasswordCheckbox = document.getElementById("show-password");
-        
-        showPasswordCheckbox.addEventListener("change", function() {
-          passwordInput.type = this.checked ? "text" : "password";
+
+        showPasswordCheckbox.addEventListener("change", function () {
+            passwordInput.type = this.checked ? "text" : "password";
         });
-      </script>
+    </script>
 </body>
 
 </html>

@@ -278,3 +278,32 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#username {
+    font-family: 'Abel', sans-serif;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    height: 4vh;
+    
+}
+
+#password {
+    font-family: 'Abel', sans-serif;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    height: 4vh;
+
+}
+
+
+.log__in--button {
+   background-color:rgba(121, 159, 217, 0.6);
+   border: 5px solid rgba(121, 159, 217, 1);
+   margin-top: 20px;
+   height: 5vh;
+   font-family: 'Abel', sans-serif;
+   font-size: 1.2rem;
+   border-radius: 5px;
+}
