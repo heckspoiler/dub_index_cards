@@ -8,7 +8,7 @@ const flask = document.querySelector(".fa-flask ");
 const buttons = document.querySelector(".landing__page--button--section");
 const logInSection = document.querySelector(".landing__page--login--section");
 const logInButton = document.querySelector(".login__button");
-const cross = document.getElementById("cross");
+const cross = document.querySelector(".cross");
 
 window.onload = function () {
   setTimeout(function () {
