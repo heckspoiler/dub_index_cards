@@ -36,7 +36,7 @@
             </p>
         </section>
         <section class="landing__page--button--section">
-            <button type="button" class="button landing__page--button login__button" >Log In</button>
+            <button type="button" class="button landing__page--button login__button">Log In</button>
             <button type="button" class="button landing__page--button signup__button">Sign Up</button>
             <section class="landing__page--button--icons">
                 <i class="fa-brands fa-github"></i>
@@ -48,7 +48,7 @@
             <div class="cross"></div>
             <h2 class="login__section--title">Welcome back you smart person!</h2>
             <form action="/tutorial/action.html" class="login_section--form">
-                <label for="username">Username</label><br />
+                <label for="username">E-Mail</label><br />
                 <input type="text" id="username" name="username" maxlength="16" placeholder="  Email or Username"
                     required><br />
                 <label for="password">Password</label><br />
@@ -58,30 +58,52 @@
                     <label for="show-password">Show password</label>
                 </section>
                 <section class="logged__in--section">
-                <input type="checkbox" id="logged__in--radio">
-                <label for="logged__in--radio">Keep me logged in</label>
+                    <input type="checkbox" id="logged__in--radio">
+                    <label for="logged__in--radio">Keep me logged in</label>
                 </section>
                 <input type="submit" value="Login" class="log__in--button">
-                <a href="#" class="username__forgotten">Forgot username or password...</a>
+                <a href="#" class="username__forgotten">Forgot password...</a>
             </form>
         </section>
         <section class="landing__page--signup--section">
             <div class="cross"></div>
-                <h2 class="login__section--title">Welcome back you smart person!</h2>
-                <form>
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
-                    <label for="lastname">Last Name</label><br>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-                    <label for="email">Your E-Mail</label>
-                    <input type="email" id="email" name="email" placeholder="email">
-                    <label for="birthday">Date of Birth</label>
-                    <input type="date" >
-    
-                </form>
+            <h2 class="login__section--title">Signign up for your future self!</h2>
+            <form class="sign__up--form">
+                <section class="sign__up--first-section">
+                    <section>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="  First Name">
+                    </section>
+                    <section>
+                        <label for="birthday">Date of Birth</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </section>
+                    <section>
+                        <label for="password-signup">Password</label>
+                        <input type="password" id="password-signup" placeholder="  Password">
+                    </section>
+                </section>
+                <section class="sign__up--second-section">
+                    <section>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="  Last Name">
+
+                    </section>
+                    <section>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="  e.g. you@dub-index.com">
+
+                    </section>
+                    <section>
+                        <label for="password-signup-2">Repeat Password</label>
+                        <input type="password" id="password-signup-2" placeholder="  Password">
+                    </section>
+                </section>
+
+            </form>
         </section>
     </section>
-    
+
     <script>
         const passwordInput = document.getElementById("password");
         const showPasswordCheckbox = document.getElementById("show-password");
