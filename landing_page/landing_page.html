@@ -36,7 +36,7 @@
             </p>
         </section>
         <section class="landing__page--button--section">
-            <button type="button" class="button landing__page--button login__button">Log In</button>
+            <button type="button" class="button landing__page--button login__button" >Log In</button>
             <button type="button" class="button landing__page--button signup__button">Sign Up</button>
             <section class="landing__page--button--icons">
                 <i class="fa-brands fa-github"></i>
@@ -44,7 +44,8 @@
                 <i class="fa-brands fa-facebook"></i>
             </section>
         </section>
-        <section class="landing__page--login--section">
+        <section class="landing__page--login--section landing__page--popup--section">
+            <div id="cross"></div>
             <h2 class="login__section--title">Welcome back you smart person!</h2>
             <form action="/tutorial/action.html" class="login_section--form">
                 <label for="username">Username</label><br />
@@ -61,7 +62,7 @@
                 <label for="logged__in--radio">Keep me logged in</label>
                 </section>
                 <input type="submit" value="Login" class="log__in--button">
-               
+                <a href="#" class="username__forgotten">Forgot username or password...</a>
             </form>
         </section>
     </section>

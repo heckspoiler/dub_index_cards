@@ -6,6 +6,9 @@ const brackets = document.querySelector(".fa-brackets-curly");
 const saturn = document.querySelector(".fa-planet-ringed");
 const flask = document.querySelector(".fa-flask ");
 const buttons = document.querySelector(".landing__page--button--section");
+const logInSection = document.querySelector(".landing__page--login--section");
+const logInButton = document.querySelector(".login__button");
+const cross = document.getElementById("cross");
 
 window.onload = function () {
   setTimeout(function () {
@@ -64,4 +67,18 @@ document.addEventListener("DOMContentLoaded", function () {
     text.style.transition = "opacity 1.7s ease-in-out";
     text.style.opacity = 1;
   }, 600);
+});
+
+logInButton.addEventListener("click", function () {
+  if (logInSection.style.visibility === "hidden") {
+    logInSection.style.visibility = "visible";
+  } else {
+    logInSection.style.visibility = "hidden";
+  }
+});
+
+cross.addEventListener("click", function (event) {
+  if (logInSection.style.visibility === "visible") {
+    logInSection.style.visibility = "hidden";
+  }
 });
