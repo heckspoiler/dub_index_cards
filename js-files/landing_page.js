@@ -7,10 +7,11 @@ const saturn = document.querySelector(".fa-planet-ringed");
 const flask = document.querySelector(".fa-flask ");
 const buttons = document.querySelector(".landing__page--button--section");
 const logInSection = document.querySelector(".landing__page--login--section");
-const logInButton = document.querySelector(".login__button");
+const logInButton = document.querySelector(".landing__page--login--button");
 const cross = document.querySelector(".cross");
 const signUpSection = document.querySelector(".landing__page--signup--section");
-const signUpButton = document.querySelector(".sign__up--button");
+const signUpButton = document.querySelector(".landing__page--signup--button");
+const signUpCross = document.querySelector(".cross__sign--up");
 
 window.onload = function () {
   setTimeout(function () {
@@ -95,7 +96,7 @@ cross.addEventListener("click", function (event) {
   }
 });
 
-/*signUpButton.addEventListener("click", function () {
+signUpButton.addEventListener("click", function () {
   if (signUpSection.style.visibility === "hidden") {
     signUpSection.style.visibility = "visible";
     signUpSection.style.transition = "opacity 1s ease-in-out";
@@ -107,14 +108,9 @@ cross.addEventListener("click", function (event) {
       signUpSection.style.visibility = "hidden";
     }, 1000);
   }
-});*/
-
-singUpButton.addEventListener("click", function () {
-  signUpSection.style.visibility = "visible";
-  signUpSection.style.opacity = "1";
 });
 
-cross.addEventListener("click", function (event) {
+signUpCross.addEventListener("click", function (event) {
   if (signUpSection.style.visibility === "visible") {
     signUpSection.style.visibility = "hidden";
     signUpSection.style.opacity = "0";
@@ -123,3 +119,5 @@ cross.addEventListener("click", function (event) {
     }, 1000);
   }
 });
+
+console.log(signUpButton);
