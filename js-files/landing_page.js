@@ -95,7 +95,7 @@ cross.addEventListener("click", function (event) {
   }
 });
 
-signUpButton.addEventListener("click", function () {
+/*signUpButton.addEventListener("click", function () {
   if (signUpSection.style.visibility === "hidden") {
     signUpSection.style.visibility = "visible";
     signUpSection.style.transition = "opacity 1s ease-in-out";
@@ -107,6 +107,11 @@ signUpButton.addEventListener("click", function () {
       signUpSection.style.visibility = "hidden";
     }, 1000);
   }
+});*/
+
+singUpButton.addEventListener("click", function () {
+  signUpSection.style.visibility = "visible";
+  signUpSection.style.opacity = "1";
 });
 
 cross.addEventListener("click", function (event) {
