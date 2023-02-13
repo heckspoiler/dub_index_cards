@@ -31,17 +31,43 @@ body {
   font-size: 22vw;
 }
 
+@keyframes floatcode {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .fa-code {
   margin-top: 15vh;
   margin-left: 13vw;
   position: absolute;
   transform: rotate(-15deg);
+  animation: floatcode 4s ease-in-out infinite;
+}
+
+@keyframes floatcalc {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
 }
 .fa-calculator {
   margin-top: 70vh;
   position: absolute;
   margin-left: 60vw;
   transform: rotate(25deg);
+  animation: floatcalc 7s ease-in-out infinite;
 }
 
 .fa-square-root-variable {
