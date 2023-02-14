@@ -177,3 +177,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 670px) {
+  .about__section--paragraphs {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    top: 6.5vh;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    padding: 1vh;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0px -5px 1px linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    width: 80vw;
+    height: 70vh;
+    gap: 6vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 1em;
+  }
+
+  .about__section--paragraphs--paragraph {
+    display: none;
+  }
+}
