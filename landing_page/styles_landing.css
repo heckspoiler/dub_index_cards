@@ -212,6 +212,7 @@ body {
   outline-color: white;
   outline-width: 0vw;
   transition: font-size 0.4s ease-in-out, 0.4s ease-in-out;
+  opacity: 0;
 }
 
 .landing__page--nav--bar--link:hover {
@@ -265,10 +266,6 @@ body {
   transform: rotateZ(45deg) translate(-0.4rem, -0.3rem);
 }
 
-.landing__page--nav--bar--list li {
-  opacity: 0;
-}
-
 .landing__page--nav--bar--list li :nth-child(1) {
   transition: all 0.5s ease-in-out 0.2s;
 }
@@ -285,7 +282,7 @@ body {
   transition: all 0.5s ease-in-out 1s;
 }
 
-.landing__page--nav--bar--list li.fade {
+.fade {
   opacity: 1;
 }
 
