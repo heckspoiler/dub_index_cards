@@ -12,6 +12,13 @@ const cross = document.querySelector(".cross");
 const signUpSection = document.querySelector(".landing__page--signup--section");
 const signUpButton = document.querySelector(".landing__page--signup--button");
 const signUpCross = document.querySelector(".cross__sign--up");
+const hamburgerContainer = document.querySelector(".landing__page--nav--bar");
+const hamburger = document.querySelector(".header__main-nav--hamburger");
+const links = document.querySelectorAll(".landing__page--nav--bar--link");
+
+hamburger.addEventListener("click", () => {
+  hamburgerContainer.classList.toggle("clicked");
+});
 
 window.onload = function () {
   setTimeout(function () {
@@ -119,5 +126,3 @@ signUpCross.addEventListener("click", function (event) {
     }, 1000);
   }
 });
-
-console.log(signUpButton);
