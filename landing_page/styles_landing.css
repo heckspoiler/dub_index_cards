@@ -169,9 +169,10 @@ body {
   height: 100%;
   font-family: "Press Start 2P", cursive;
   display: flex;
-  box-shadow: 1px 10px 10px rgb(186, 225, 216);
+
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  left: -500px;
 }
 
 .landing__page--nav--bar--list {
@@ -227,7 +228,7 @@ body {
   left: 3rem;
   cursor: pointer;
   opacity: 0.8;
-  background: -webkit-linear-gradient(#a365ea, #2bcee7);
+
   padding: 0.7rem;
   border-radius: 50%;
   display: flex;
@@ -241,6 +242,51 @@ body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 0.2rem;
   transition: all 0.4s ease-in-out;
+}
+
+.clicked {
+  left: 0px;
+  background: -webkit-linear-gradient(#a365ea, #2bcee7);
+}
+
+.clicked--bg {
+  background: -webkit-linear-gradient(#a365ea, #2bcee7);
+}
+
+.clicked .line-1 {
+  transform: rotateZ(-45deg) translate(-0.4rem, 0.3rem);
+}
+
+.clicked .line-2 {
+  opacity: 0;
+}
+
+.clicked .line-3 {
+  transform: rotateZ(45deg) translate(-0.4rem, -0.3rem);
+}
+
+.landing__page--nav--bar--list li {
+  opacity: 0;
+}
+
+.landing__page--nav--bar--list li :nth-child(1) {
+  transition: all 0.5s ease-in-out 0.2s;
+}
+.landing__page--nav--bar--list li :nth-child(2) {
+  transition: all 0.5s ease-in-out 0.4s;
+}
+.landing__page--nav--bar--list li :nth-child(3) {
+  transition: all 0.5s ease-in-out 0.6s;
+}
+.landing__page--nav--bar--list li :nth-child(4) {
+  transition: all 0.5s ease-in-out 0.8s;
+}
+.landing__page--nav--bar--list li :nth-child(5) {
+  transition: all 0.5s ease-in-out 1s;
+}
+
+.landing__page--nav--bar--list li.fade {
+  opacity: 1;
 }
 
 /*landing page text styles*/

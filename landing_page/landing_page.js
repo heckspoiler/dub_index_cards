@@ -18,6 +18,7 @@ const links = document.querySelectorAll(".landing__page--nav--bar--link");
 
 hamburger.addEventListener("click", () => {
   hamburgerContainer.classList.toggle("clicked");
+  hamburger.classList.toggle("clicked--bg");
 });
 
 window.onload = function () {
