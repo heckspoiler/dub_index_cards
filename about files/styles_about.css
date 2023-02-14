@@ -131,6 +131,8 @@ body {
   margin-left: 4vw;
   margin-top: 3.4vh;
   transform: rotate(180deg);
+  text-shadow: 1px 1px 8px rgb(137, 39, 159);
+  cursor: pointer;
 }
 
 /* about paragraph section */
