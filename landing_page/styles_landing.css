@@ -1,5 +1,6 @@
 /*font-family: 'ABeeZee', sans-serif;
-font-family: 'Abel', sans-serif;*/
+font-family: 'Abel', sans-serif;
+font-family: 'Press Start 2P', cursive;*/
 
 /*general styles*/
 *,
@@ -152,6 +153,49 @@ body {
   }
 }
 
+/* landing page nav bar styling */
+
+.landing__page--nav--bar {
+  background-color: rgba(207, 235, 204, 0.98);
+  width: 33%;
+  position: absolute;
+  z-index: 100000;
+  height: 100%;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  border-right: 2px solid black;
+}
+
+.landing__page--nav--bar--list {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+}
+
+.landing__page--nav--bar--listobject {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  height: 2vh;
+}
+
+.landing__page--nav--bar--link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(#a365ea, #2bcee7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 /*landing page text styles*/
 
 .landing__page--intro--text {
@@ -260,6 +304,8 @@ body {
   text-align: center;
   width: 40vw;
   line-height: 2em;
+  margin-top: -5vh;
+  margin-bottom: 5vh;
 }
 
 .login_section--form {
@@ -411,3 +457,25 @@ body {
 .log__in--button:active {
   background-color: rgba(121, 159, 217, 1);
 }
+
+@media only screen and (max-width: 480px) {
+  .landing__page--signup--section h2 {
+    font-family: "Press Start 2P", cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    width: 40vw;
+    line-height: 2em;
+  }
+
+  .landing__page--login--section h2 {
+    font-size: 1em;
+    margin-top: -7vh;
+    margin-bottom: 5vh;
+  }
+
+  .landing__page--login--section {
+    visibility: visible;
+    opacity: 1;
+  }
+} ;
