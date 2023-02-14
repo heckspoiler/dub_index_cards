@@ -156,14 +156,20 @@ body {
 /* landing page nav bar styling */
 
 .landing__page--nav--bar {
-  background-color: rgba(207, 235, 204, 0.98);
+  background: rgb(186, 225, 216);
+  background: linear-gradient(
+    252deg,
+    rgba(186, 225, 216, 1) 0%,
+    rgba(207, 235, 204, 0.74) 47%,
+    rgba(25, 174, 204, 0.743942645417542) 100%
+  );
   width: 33%;
   position: absolute;
   z-index: 100000;
   height: 100%;
   font-family: "Press Start 2P", cursive;
   display: flex;
-  border-right: 2px solid black;
+  box-shadow: 1px 10px 10px rgb(186, 225, 216);
 }
 
 .landing__page--nav--bar--list {
@@ -189,11 +195,24 @@ body {
   background: -webkit-linear-gradient(#a365ea, #2bcee7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
+  text-shadow: 1px 1px 1px white;
+  font-size: 1.1em;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  transition: font-size 0.4s ease-in-out, border-image 2s ease-in;
+  padding: 5px;
+  border: 1vh solid transparent;
+  border-radius: 5px;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 0vw;
+  transition: font-size 0.4s ease-in-out, 0.4s ease-in-out;
+}
+
+.landing__page--nav--bar--link:hover {
+  font-size: 1.28em;
 }
 
 /*landing page text styles*/
