@@ -1,5 +1,6 @@
 const backArrow = document.querySelector(".fa-arrow-right");
 console.log(backArrow);
+const paragraphCross = document.querySelectorAll(".fa-xmark");
 
 const paragraphs = document.querySelectorAll(
   ".about__section--paragraphs--paragraph"

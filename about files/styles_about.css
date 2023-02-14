@@ -220,7 +220,6 @@ body {
   }
 
   .about__section--paragraphs--paragraph {
-    display: none;
     position: absolute;
     background-color: white;
     color: black;
@@ -229,11 +228,18 @@ body {
   }
 
   .about--container {
-    border: 1px solid red;
-    width: 100%;
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+  }
+
+  .upper_paragraphs {
+    top: 20vh;
+  }
+
+  .lower_paragraphs {
+    top: 58vh;
   }
 }
