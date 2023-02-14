@@ -11,6 +11,7 @@ paragraphs.forEach(function (paragraph) {
   button.addEventListener("click", function () {
     paragraph.style.display =
       paragraph.style.display === "none" ? "block" : "none";
+    paragraph.style.transition === "display 2s ease-in-out";
   });
 });
 
