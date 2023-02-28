@@ -1,4 +1,5 @@
-/*font-family: 'ABeeZee', sans-serif;
+/*
+font-family: 'ABeeZee', sans-serif;
 font-family: 'Abel', sans-serif;
 font-family: 'Press Start 2P', cursive;*/
 
@@ -54,12 +55,12 @@ body {
 
 .fa-alien-8bit {
   position: absolute;
-  font-size: 22vw;
-  margin-top: 20vh;
+  font-size: 18vw;
+  margin-top: 15vh;
   margin-left: 5vh;
   color: blue;
   opacity: 30%;
-  transform: rotate(15deg);
+  transform: rotate(100deg);
   animation: floatalien 4s ease-in-out infinite;
 }
 
@@ -78,7 +79,7 @@ body {
 
 .fa-planet-ringed {
   position: absolute;
-  font-size: 20vw;
+  font-size: 16vw;
   color: blue;
   margin-top: 13vh;
   margin-left: 57vw;
@@ -156,28 +157,22 @@ body {
 /* landing page nav bar styling */
 
 .landing__page--nav--bar {
-  background: rgb(186, 225, 216);
   background: transparent;
-  width: 33%;
+  width: 15%;
   position: absolute;
   z-index: 100000;
   height: 100%;
   font-family: "Press Start 2P", cursive;
   display: flex;
-
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  left: -500px;
+  left: -200px;
+  transition: left 01s ease-in-out;
 }
 
 .landing__page--nav--bar--list {
   display: flex;
-  background: linear-gradient(
-    252deg,
-    rgba(186, 225, 216, 1) 0%,
-    rgba(207, 235, 204, 0.9) 47%,
-    rgba(25, 174, 204, 0.9) 100%
-  );
+  background: transparent;
   flex-direction: column;
   gap: 8vh;
   width: 100%;
@@ -188,7 +183,7 @@ body {
   justify-content: center;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border: 3px solid white;
+  transform: skewY(2deg);
 }
 
 .landing__page--nav--bar--listobject {
@@ -201,10 +196,9 @@ body {
 
 .landing__page--nav--bar--link {
   text-decoration: none;
-  background: -webkit-linear-gradient(#a365ea, #2bcee7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 1px white;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
   font-size: 1.1em;
   margin: auto;
   transition: font-size 0.4s ease-in-out, border-image 2s ease-in;
@@ -216,10 +210,14 @@ body {
   outline-width: 0vw;
   transition: font-size 0.4s ease-in-out, 0.4s ease-in-out;
   opacity: 0;
+  transform: skewY(-2deg);
 }
 
-.landing__page--nav--bar--link:hover {
+.landing__page--nav--bar--link:hover,
+.landing__page--nav--bar--link:active {
   font-size: 1.28em;
+  transform: skewY(10deg);
+  text-shadow: 1px 1px 0.5px white;
 }
 
 /* hamburger nav bar styling */
@@ -252,7 +250,6 @@ body {
 }
 
 .clicked--bg {
-  background-color: rgb(247, 104, 104);
   opacity: 0.5;
 }
 
@@ -268,19 +265,19 @@ body {
   transform: rotateZ(45deg) translate(-0.4rem, -0.3rem);
 }
 
-.landing__page--nav--bar--list li :nth-child(1) {
+.landing__page--nav--bar--list li:nth-child(1) {
   transition: all 0.2s ease-in-out 0.2s;
 }
-.landing__page--nav--bar--list li :nth-child(2) {
+.landing__page--nav--bar--list li:nth-child(2) {
   transition: all 0.2s ease-in-out 0.4s;
 }
-.landing__page--nav--bar--list li :nth-child(3) {
+.landing__page--nav--bar--list li:nth-child(3) {
   transition: all 0.2s ease-in-out 0.6s;
 }
-.landing__page--nav--bar--list li :nth-child(4) {
+.landing__page--nav--bar--list li:nth-child(4) {
   transition: all 0.2s ease-in-out 0.8s;
 }
-.landing__page--nav--bar--list li :nth-child(5) {
+.landing__page--nav--bar--list li:nth-child(5) {
   transition: all 0.2s ease-in-out 1s;
 }
 
@@ -561,6 +558,18 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  /* landing page general */
+
+  .landing__page--title {
+    font-size: 1.5rem;
+  }
+
+  .landing__page--intro--text {
+    font-size: 0.8rem;
+    margin-top: 5rem;
+  }
+
+  /*sign up section*/
   .landing__page--signup--section h2 {
     font-family: "Press Start 2P", cursive;
     color: white;
@@ -569,10 +578,53 @@ body {
     width: 40vw;
     line-height: 2em;
   }
-
+  /* login section */
   .landing__page--login--section h2 {
     font-size: 1em;
     margin-top: -7vh;
     margin-bottom: 5vh;
   }
-} ;
+
+  /* nav bar */
+
+  .landing__page--nav--bar {
+    width: 100%;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    left: -500px;
+    font-size: 1rem;
+  }
+
+  .clicked {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .landing__page--title {
+    font-size: 1.2rem;
+  }
+
+  .landing__page--button--icons {
+    font-size: 2rem;
+  }
+
+  .landing__page--button--section {
+    height: 30%;
+  }
+
+  .landing__page--button--icons {
+    margin-bottom: -100px;
+    gap: 4rem;
+  }
+
+  .landing__page--signup--section h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .landing__page--login--section h2 {
+    font-size: 0.8rem;
+    margin-top: -7vh;
+    margin-bottom: 5vh;
+  }
+}
