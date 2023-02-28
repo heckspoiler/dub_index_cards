@@ -8,7 +8,7 @@ const flask = document.querySelector(".fa-flask ");
 const buttons = document.querySelector(".landing__page--button--section");
 const logInSection = document.querySelector(".landing__page--login--section");
 const logInButton = document.querySelector(".landing__page--login--button");
-const cross = document.querySelector(".cross");
+const logInCross = document.querySelector(".cross");
 const signUpSection = document.querySelector(".landing__page--signup--section");
 const signUpButton = document.querySelector(".landing__page--signup--button");
 const signUpCross = document.querySelector(".cross__sign--up");
@@ -22,6 +22,13 @@ hamburger.addEventListener("click", () => {
   links.forEach((link) => {
     link.classList.toggle("fade");
   });
+});
+
+const passwordInput = document.getElementById("password");
+const showPasswordCheckbox = document.getElementById("show-password");
+
+showPasswordCheckbox.addEventListener("change", function () {
+  passwordInput.type = this.checked ? "text" : "password";
 });
 
 window.onload = function () {
@@ -83,50 +90,66 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 600);
 });
 
-logInButton.addEventListener("click", function () {
-  if (logInSection.style.visibility === "hidden") {
-    logInSection.style.visibility = "visible";
-    logInSection.style.transition = "opacity 1s ease-in-out";
-    logInSection.style.opacity = "1";
-  } else {
-    logInSection.style.transition = "opacity 1s ease-in-out";
-    logInSection.style.opacity = "0";
-    setTimeout(() => {
-      logInSection.style.visibility = "hidden";
-    }, 1000);
-  }
+logInButton.addEventListener("click", () => {
+  logInSection.classList.add("landing__page--login--section--visible");
 });
 
-cross.addEventListener("click", function (event) {
-  if (logInSection.style.visibility === "visible") {
-    logInSection.style.visibility = "hidden";
-    logInSection.style.opacity = "0";
-    setTimeout(() => {
-      logInSection.style.opacity = "0";
-    }, 1000);
-  }
+logInCross.addEventListener("click", () => {
+  logInSection.classList.remove("landing__page--login--section--visible");
 });
 
-signUpButton.addEventListener("click", function () {
-  if (signUpSection.style.visibility === "hidden") {
-    signUpSection.style.visibility = "visible";
-    signUpSection.style.transition = "opacity 1s ease-in-out";
-    signUpSection.style.opacity = "1";
-  } else {
-    signUpSection.style.transition = "opacity 1s ease-in-out";
-    signUpSection.style.opacity = "0";
-    setTimeout(() => {
-      signUpSection.style.visibility = "hidden";
-    }, 1000);
-  }
+signUpButton.addEventListener("click", () => {
+  signUpSection.classList.add("landing__page--signup--section--visible");
 });
 
-signUpCross.addEventListener("click", function (event) {
-  if (signUpSection.style.visibility === "visible") {
-    signUpSection.style.visibility = "hidden";
-    signUpSection.style.opacity = "0";
-    setTimeout(() => {
-      signUpSection.style.opacity = "0";
-    }, 1000);
-  }
+signUpCross.addEventListener("click", () => {
+  signUpSection.classList.remove("landing__page--signup--section--visible");
 });
+
+// logInButton.addEventListener("click", function () {
+//   if (logInSection.style.visibility === "hidden") {
+//     logInSection.style.visibility = "visible";
+//     logInSection.style.transition = "opacity 1s ease-in-out";
+//     logInSection.style.opacity = "1";
+//   } else {
+//     logInSection.style.transition = "opacity 1s ease-in-out";
+//     logInSection.style.opacity = "0";
+//     setTimeout(() => {
+//       logInSection.style.visibility = "hidden";
+//     }, 1000);
+//   }
+// });
+
+// cross.addEventListener("click", function (event) {
+//   if (logInSection.style.visibility === "visible") {
+//     logInSection.style.visibility = "hidden";
+//     logInSection.style.opacity = "0";
+//     setTimeout(() => {
+//       logInSection.style.opacity = "0";
+//     }, 1000);
+//   }
+// });
+
+// signUpButton.addEventListener("click", function () {
+//   if (signUpSection.style.visibility === "hidden") {
+//     signUpSection.style.visibility = "visible";
+//     signUpSection.style.transition = "opacity 1s ease-in-out";
+//     signUpSection.style.opacity = "1";
+//   } else {
+//     signUpSection.style.transition = "opacity 1s ease-in-out";
+//     signUpSection.style.opacity = "0";
+//     setTimeout(() => {
+//       signUpSection.style.visibility = "hidden";
+//     }, 1000);
+//   }
+// });
+
+// signUpCross.addEventListener("click", function (event) {
+//   if (signUpSection.style.visibility === "visible") {
+//     signUpSection.style.visibility = "hidden";
+//     signUpSection.style.opacity = "0";
+//     setTimeout(() => {
+//       signUpSection.style.opacity = "0";
+//     }, 1000);
+//   }
+// });

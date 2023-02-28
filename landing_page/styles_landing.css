@@ -157,12 +157,7 @@ body {
 
 .landing__page--nav--bar {
   background: rgb(186, 225, 216);
-  background: linear-gradient(
-    252deg,
-    rgba(186, 225, 216, 1) 0%,
-    rgba(207, 235, 204, 0.74) 47%,
-    rgba(25, 174, 204, 0.743942645417542) 100%
-  );
+  background: transparent;
   width: 33%;
   position: absolute;
   z-index: 100000;
@@ -177,12 +172,23 @@ body {
 
 .landing__page--nav--bar--list {
   display: flex;
+  background: linear-gradient(
+    252deg,
+    rgba(186, 225, 216, 1) 0%,
+    rgba(207, 235, 204, 0.9) 47%,
+    rgba(25, 174, 204, 0.9) 100%
+  );
   flex-direction: column;
-  gap: 15vh;
+  gap: 8vh;
   width: 100%;
+  height: 70%;
   margin-top: auto;
   margin-bottom: auto;
   align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 3px solid white;
 }
 
 .landing__page--nav--bar--listobject {
@@ -200,10 +206,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 1px white;
   font-size: 1.1em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   transition: font-size 0.4s ease-in-out, border-image 2s ease-in;
   padding: 5px;
   border: 1vh solid transparent;
@@ -229,7 +232,6 @@ body {
   left: 3rem;
   cursor: pointer;
   opacity: 0.8;
-
   padding: 0.7rem;
   border-radius: 50%;
   display: flex;
@@ -247,11 +249,11 @@ body {
 
 .clicked {
   left: 0px;
-  background: -webkit-linear-gradient(#a365ea, #2bcee7);
 }
 
 .clicked--bg {
-  background: -webkit-linear-gradient(#a365ea, #2bcee7);
+  background-color: rgb(247, 104, 104);
+  opacity: 0.5;
 }
 
 .clicked .line-1 {
@@ -267,19 +269,19 @@ body {
 }
 
 .landing__page--nav--bar--list li :nth-child(1) {
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.2s ease-in-out 0.2s;
 }
 .landing__page--nav--bar--list li :nth-child(2) {
-  transition: all 0.5s ease-in-out 0.4s;
+  transition: all 0.2s ease-in-out 0.4s;
 }
 .landing__page--nav--bar--list li :nth-child(3) {
-  transition: all 0.5s ease-in-out 0.6s;
+  transition: all 0.2s ease-in-out 0.6s;
 }
 .landing__page--nav--bar--list li :nth-child(4) {
-  transition: all 0.5s ease-in-out 0.8s;
+  transition: all 0.2s ease-in-out 0.8s;
 }
 .landing__page--nav--bar--list li :nth-child(5) {
-  transition: all 0.5s ease-in-out 1s;
+  transition: all 0.2s ease-in-out 1s;
 }
 
 .fade {
@@ -388,6 +390,11 @@ body {
   margin-left: auto;
 }
 
+.landing__page--login--section--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .landing__page--login--section h2 {
   font-family: "Press Start 2P", cursive;
   color: white;
@@ -491,6 +498,11 @@ body {
   width: 70vw;
   margin-top: auto;
   margin-left: auto;
+}
+
+.landing__page--signup--section--visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .landing__page--signup--section h2 {
