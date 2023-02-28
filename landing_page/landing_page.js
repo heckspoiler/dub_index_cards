@@ -106,50 +106,14 @@ signUpCross.addEventListener("click", () => {
   signUpSection.classList.remove("landing__page--signup--section--visible");
 });
 
-// logInButton.addEventListener("click", function () {
-//   if (logInSection.style.visibility === "hidden") {
-//     logInSection.style.visibility = "visible";
-//     logInSection.style.transition = "opacity 1s ease-in-out";
-//     logInSection.style.opacity = "1";
-//   } else {
-//     logInSection.style.transition = "opacity 1s ease-in-out";
-//     logInSection.style.opacity = "0";
-//     setTimeout(() => {
-//       logInSection.style.visibility = "hidden";
-//     }, 1000);
-//   }
-// });
+function ansValidation(ev) {
+  ev.preventDefault;
+  // there is no input named name
+  //var nameValue = document.getElementById("name").value
+  let passValue = document.getElementById("password-signup").value;
+  let confpassValue = document.getElementById("password-signup-2").value;
+    // we use strict validation ( !== ) because it's a good practice.
+  } else if (passValue !== confpassValue) {
+    window.alert("Passwords do not match!");
+  }
 
-// cross.addEventListener("click", function (event) {
-//   if (logInSection.style.visibility === "visible") {
-//     logInSection.style.visibility = "hidden";
-//     logInSection.style.opacity = "0";
-//     setTimeout(() => {
-//       logInSection.style.opacity = "0";
-//     }, 1000);
-//   }
-// });
-
-// signUpButton.addEventListener("click", function () {
-//   if (signUpSection.style.visibility === "hidden") {
-//     signUpSection.style.visibility = "visible";
-//     signUpSection.style.transition = "opacity 1s ease-in-out";
-//     signUpSection.style.opacity = "1";
-//   } else {
-//     signUpSection.style.transition = "opacity 1s ease-in-out";
-//     signUpSection.style.opacity = "0";
-//     setTimeout(() => {
-//       signUpSection.style.visibility = "hidden";
-//     }, 1000);
-//   }
-// });
-
-// signUpCross.addEventListener("click", function (event) {
-//   if (signUpSection.style.visibility === "visible") {
-//     signUpSection.style.visibility = "hidden";
-//     signUpSection.style.opacity = "0";
-//     setTimeout(() => {
-//       signUpSection.style.opacity = "0";
-//     }, 1000);
-//   }
-// });

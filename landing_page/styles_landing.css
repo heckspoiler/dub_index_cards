@@ -575,9 +575,4 @@ body {
     margin-top: -7vh;
     margin-bottom: 5vh;
   }
-
-  .landing__page--login--section {
-    visibility: visible;
-    opacity: 1;
-  }
 } ;
