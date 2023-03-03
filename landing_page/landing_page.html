@@ -93,7 +93,12 @@
       >
         <div class="cross"></div>
         <h2 class="login__section--title">Welcome back you smart person!</h2>
-        <form action="/tutorial/action.html" class="login_section--form">
+        <form
+          action="/tutorial/action.html"
+          class="login_section--form"
+          method="POST"
+          onsubmit="submitForm(event)"
+        >
           <label for="username">E-Mail</label><br />
           <input
             type="text"
@@ -119,7 +124,9 @@
             <input type="checkbox" id="logged__in--radio" />
             <label for="logged__in--radio">Keep me logged in</label>
           </section>
-          <input type="submit" value="Login" class="log__in--button" />
+          <a class="login__anchor" href="../card_editor/card_editor.html"
+            ><button type="submit" class="log__in--button">Login</button>
+          </a>
           <a href="#" class="username__forgotten">Forgot password...</a>
         </form>
       </section>

@@ -210,3 +210,10 @@ function animateIntro() {
 }
 
 animateIntro();
+
+// submit form leading to new html
+
+function submitForm(event) {
+  event.preventDefault();
+  window.location.href = "../card_editor/card_editor.html";
+}

@@ -184,7 +184,6 @@ body {
   height: 80%;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
 }
 
 .about__paragraphs button {
@@ -202,6 +201,10 @@ body {
     display: block;
     overflow: scroll;
     width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: red;
   }
 
   .about__paragraphs {
