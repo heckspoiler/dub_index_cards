@@ -7,6 +7,11 @@ font-family: 'Press Start 2P', cursive;*/
     --paragraph-font: font-family: 'ABeeZee', sans-serif;
 }
 
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 
 /* general styling */
 
@@ -34,6 +39,8 @@ font-family: 'Press Start 2P', cursive;*/
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 
 }
 
@@ -89,8 +96,9 @@ font-family: 'Press Start 2P', cursive;*/
     color: white;
     font-size: 10px;
     margin-left: 2rem;
-    margin-top: 4rem;
+    margin-top: -6rem;
     opacity: 0.6;
+    transition: margin-top 1s ease-in-out;
 
 }
 
@@ -184,6 +192,8 @@ font-family: 'Press Start 2P', cursive;*/
     font-size: 1.5rem;
     height: 3rem;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
 
 }
 .folder_section--smiley {
@@ -192,6 +202,8 @@ font-family: 'Press Start 2P', cursive;*/
     transform: rotate(90deg);
     margin-top: 2rem;
     font-size: 3rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 
 }
 
