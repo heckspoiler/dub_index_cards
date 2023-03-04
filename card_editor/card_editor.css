@@ -221,7 +221,6 @@ body {
     margin-left: 10vw;
     margin-top: 30vh;
     border-radius: 10px;
-    border: 1px solid red;
    
 }
 
@@ -242,7 +241,7 @@ background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
     align-items: center;
     justify-content: center;
     font-family: 'Abel', sans-serif;
-    border: 8px solid white;
+    border: 8px solid black;
     border-radius: 20px;
     gap: 10rem;
 }
@@ -290,3 +289,16 @@ background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
     height: 2.5rem;
     width: 8rem;
 }
+
+.create-me-text {
+    position: absolute;
+    margin-left: 28rem;
+    font-size: 2rem;
+    color: white;
+    animation-name: alien_animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
