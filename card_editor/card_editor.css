@@ -21,11 +21,11 @@ font-family: 'Press Start 2P', cursive;*/
 /* arrow styling */
 
 .pointing_arrow {
-    position: absolute;
+    position: fixed;
     stroke: white;
-    width: 6%;
-    margin-left: 75%;
-    margin-top: 15rem;
+    width: 15%;
+    margin-left: 70%;
+    margin-top: 10rem;
     transform: rotate(8deg);
     animation-name: arrow_animation;
     animation-duration: 2s;
@@ -36,9 +36,9 @@ font-family: 'Press Start 2P', cursive;*/
 }
 
 @keyframes arrow_animation {
-    0% {width: 6%;}
-    50% {width: 6.6%;}
-    100% {width: 6%;}
+    0% {width: 15%;}
+    50% {width: 15.2%;}
+    100% {width: 15%;}
 }
 
 
@@ -124,7 +124,6 @@ font-family: 'Press Start 2P', cursive;*/
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    box-shadow: 2px 2px 15px grey;
 
 }
 
