@@ -18,6 +18,29 @@ font-family: 'Press Start 2P', cursive;*/
 }
 
 
+/* arrow styling */
+
+.pointing_arrow {
+    position: absolute;
+    stroke: white;
+    width: 6%;
+    margin-left: 75%;
+    margin-top: 15rem;
+    transform: rotate(8deg);
+    animation-name: arrow_animation;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes arrow_animation {
+    0% {width: 6%;}
+    50% {width: 6.6%;}
+    100% {width: 6%;}
+}
+
 
 /* title styling */
 
@@ -126,3 +149,4 @@ font-family: 'Press Start 2P', cursive;*/
     font-size: 3rem;
 
 }
+
