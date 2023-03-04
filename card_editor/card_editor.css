@@ -224,10 +224,12 @@ body {
    
 }
 
-
+/* folder form*/ 
 .folder_section--folder-form {
     position: absolute;
     display: flex;
+    visibility: hidden;
+    opacity: 0;
     /* Created with https://www.css-gradient.com */
 background: #3BDC1D;
 background: -webkit-linear-gradient(top right, #3BDC1D, #FBD306);

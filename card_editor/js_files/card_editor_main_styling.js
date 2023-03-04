@@ -25,10 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     missingFolderTitle.style.opacity = 1;
     missingFolderSmiley.style.opacity = 1;
     pointingArrow.style.opacity = 1;
-  }, 2500);
+  }, 2000);
 });
 
 plusSign.addEventListener("click", () => {
   mainSection.style.opacity = "0";
-  mainSection.style.transition = "opacity 0.6s ease-in-out";
+  mainSection.style.transition = "opacity ease-in-out";
+  formSection.style.visibility = "visible";
+  formSection.style.opacity = 1;
+  formSection.style.transition = "opacity 0.6s ease-in-out";
 });
