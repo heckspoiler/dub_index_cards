@@ -5,6 +5,10 @@ const door = document.querySelector(".logout__door");
 const missingFolderTitle = document.querySelector(".folder_section--title");
 const missingFolderSmiley = document.querySelector(".folder_section--smiley");
 const pointingArrow = document.querySelector(".pointing_arrow");
+const addButton = document.querySelector("#add-folder-button");
+const addForm = document.querySelector("#add-folder-form");
+const formSection = document.querySelector(".folder_section--folder-form");
+const mainSection = document.querySelector(".card_editor--main-section");
 
 plusSign.addEventListener("mouseover", () => {
   folderImage.style.opacity = "1";
@@ -22,4 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     missingFolderSmiley.style.opacity = 1;
     pointingArrow.style.opacity = 1;
   }, 2500);
+});
+
+plusSign.addEventListener("click", () => {
+  mainSection.style.opacity = "0";
+  mainSection.style.transition = "opacity 0.6s ease-in-out";
 });

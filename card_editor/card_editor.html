@@ -19,6 +19,20 @@
     <script src="./js_files/card_editor_main_styling.js" defer></script>
   </head>
   <body>
+    <section class="folder_section--folder-form">
+      <form id="add-folder-form">
+        <label for="folder-name">Folder Name:</label>
+        <input type="text" id="folder-name" name="folder-name" />
+        <label for="folder-name">Topic:</label>
+        <input type="text" id="folder-topic" name="folder-topic" />
+        <label for="folder-name">Chapter:</label>
+        <input type="text" id="folder-chapter" name="folder-chapter" />
+        <label for="folder-name">Tags:</label>
+        <input type="text" id="folder-tags" name="folder-tags" />
+        <button type="submit">Create Folder</button>
+      </form>
+    </section>
+    <div class="folder_section--added-folders"></div>
     <a href="../landing_page/landing_page.html"
       ><img src="../icons_and_images/door.svg" class="logout__door"
     /></a>
@@ -45,6 +59,5 @@
         </div>
       </section>
     </section>
-    <div class="folder_section--added-folders"></div>
   </body>
 </html>
