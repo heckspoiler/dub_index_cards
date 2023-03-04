@@ -229,19 +229,28 @@ body {
 .folder_section--folder-form {
     position: absolute;
     display: flex;
-    background-color: white;
+    /* Created with https://www.css-gradient.com */
+background: #3BDC1D;
+background: -webkit-linear-gradient(top right, #3BDC1D, #FBD306);
+background: -moz-linear-gradient(top right, #3BDC1D, #FBD306);
+background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
     width: 60vw;
-    height: 60vw;
+    height: 80vh;
     z-index: 10000;
     margin-left: 20vw;
     margin-top: 10vh;
     align-items: center;
     justify-content: center;
+    font-family: 'Abel', sans-serif;
+    border: 8px solid white;
+    border-radius: 20px;
+    gap: 10rem;
 }
 
 #add-folder-form {
     display: grid;
     gap: 2em;
+    margin-left: -25rem;
     
 }
 
@@ -253,4 +262,31 @@ body {
 #add-folder-form input {
     height: 3rem;
     width: 14rem;
+}
+
+
+
+.folder_image_form {
+    position: absolute;
+    height: 30%;
+    margin-left: 30rem;
+    width: 30%;
+    background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: alien_animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes alien_animation {
+    0% {transform: rotate(5deg);}
+    50% {transform: rotate(-5deg)}
+    100% {transform: rotate(5deg);}
+}
+
+#add-folder-form button {
+    height: 2.5rem;
+    width: 8rem;
 }
