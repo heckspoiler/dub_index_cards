@@ -1,6 +1,118 @@
+/*
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Press Start 2P', cursive;*/
+
+:root {
+    --paragraph-font: font-family: 'ABeeZee', sans-serif;
+}
+
+
+/* general styling */
+
 .card_editor--main-section {
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-  height: 100vh;
-  width: 100vw;
-  opacity: 80%;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+
+}
+
+
+
+/* title styling */
+
+.card_editor--main-title-secton {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card_editor--sub-title {
+    margin-top: 2rem;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    
+}
+
+.card_editor--main-title {
+    font-size: 3rem;
+}
+
+
+/* add folder section */ 
+
+.card_editor--add-folder {
+
+    position: absolute;
+    width: 14rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 80%;
+    top: 10%;
+
+}
+
+.card_editor--add-folder img {
+    height: 100%;
+    width: 100%;
+    opacity: 1 !important;
+    z-index: 9999;
+
+}
+
+.add-folder-p {
+  
+    position: absolute;
+    background-color: transparent;
+    font-size: 4rem;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    color: white;
+    border: none;
+    z-index: 10000;
+    transform: skew(12deg);
+    width: 2.4rem;
+    
+}
+
+/* folder section */ 
+
+.card_editor--folder-section {
+
+    height: 100%;
+    width: 100%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px grey;
+
+}
+
+.folder_section--wording-section {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.folder_section--title {
+
+    font-size: 2rem;
+    height: 3rem;
+    text-align: center;
+}
+.folder_section--smiley {
+
+
+    transform: rotate(90deg);
+    margin-top: 2rem;
+    font-size: 3rem;
+
 }
