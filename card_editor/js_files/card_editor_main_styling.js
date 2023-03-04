@@ -34,4 +34,5 @@ plusSign.addEventListener("click", () => {
   formSection.style.visibility = "visible";
   formSection.style.opacity = 1;
   formSection.style.transition = "opacity 0.6s ease-in-out";
+  plusSign.style.visibility = "hidden";
 });

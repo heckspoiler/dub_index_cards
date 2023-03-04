@@ -107,6 +107,7 @@ body {
   opacity: 50%;
   overflow: hidden;
   margin-top: 50vh;
+  margin-left: 70vw;
   transform: rotate(40deg);
   animation: curly 10s ease-out infinite;
   z-index: -1000;
@@ -588,6 +589,11 @@ body {
     font-size: 1.2em;
     width: 40vw;
     line-height: 2em;
+  }
+
+  .sign__up--button {
+    margin-top: 45px;
+    background-color: rgba(121, 159, 217, 1);
   }
   /* login section */
   .landing__page--login--section h2 {
