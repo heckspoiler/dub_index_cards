@@ -26,19 +26,22 @@ font-family: 'Press Start 2P', cursive;*/
     width: 15%;
     margin-left: 70%;
     margin-top: 10rem;
-    transform: rotate(8deg);
+    transform: rotate(10deg);
     animation-name: arrow_animation;
-    animation-duration: 2s;
-    animation-delay: 5s;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
 }
 
 @keyframes arrow_animation {
-    0% {width: 15%;}
-    50% {width: 15.2%;}
-    100% {width: 15%;}
+    0% {margin-left: 70%;
+    margin-top: 10rem;}
+    50% {margin-left: 70.5%;
+    margin-top: 9.6rem}
+    100% {margin-left: 70%;
+        margin-top: 10rem;}
 }
 
 
@@ -50,19 +53,22 @@ font-family: 'Press Start 2P', cursive;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .card_editor--sub-title {
     margin-top: 2rem;
     font-family: 'Abel', sans-serif;
     color: white;
+    font-size: 2.8rem;
     
 }
 
 .card_editor--main-title {
     font-size: 3rem;
 }
+
+
 
 
 /* add folder section */ 
@@ -95,16 +101,18 @@ font-family: 'Press Start 2P', cursive;*/
     position: absolute;
     background-color: transparent;
     font-size: 4rem;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 12px;
+    margin-right: 18px;
     color: white;
     border: none;
     z-index: 10000;
     transform: skew(12deg);
     width: 2.4rem;
-
+    text-shadow: 1px 1px 1px black;
     width: 50%;
     text-align: center;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
     
 }
 
@@ -120,7 +128,6 @@ font-family: 'Press Start 2P', cursive;*/
 
     height: 100%;
     width: 100%;
-    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -136,9 +143,10 @@ font-family: 'Press Start 2P', cursive;*/
 
 .folder_section--title {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 3rem;
     text-align: center;
+
 }
 .folder_section--smiley {
 
