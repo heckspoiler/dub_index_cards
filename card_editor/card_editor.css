@@ -211,13 +211,12 @@ body {
 
 .folder_section--added-folders {
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
     height: 40rem;
     width: 80%;
     border: 1px solid red;
     background-color: blue;
     top: 15rem;
-    margin-left: 100px;
-    margin-right: auto;
+    
 }
 
