@@ -216,12 +216,47 @@ body {
     position:absolute;
     z-index: 1000;
     visibility: visible;
-    height: 80%;
+    height: 100%;
     width: 80vw;
     margin-left: 10vw;
-    margin-top: 30vh;
+    margin-top: 32vh;
     border-radius: 10px;
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: ;
+    border: 1px solid white;
+    
+
+}
+
+/* added folders */
+
+.added_folder--div {
+    position: relative;
+    display: flex;
+    border: 1px solid green;
+    height: 70%;
+
+}
+
+.added_folder--div img {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    margin-top: 5vh;
+
+}
+
+.added_folder--paragraph-container {
+    
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 18vw;
+
+
 }
 
 /* folder form*/ 
@@ -321,3 +356,4 @@ background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
     padding-left: 10px;
     
 }
+
