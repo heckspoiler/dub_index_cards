@@ -5,9 +5,13 @@ class Folder {
     this.tags = tags;
   }
 }
+
 addButton.addEventListener("click", (event) => {
   event.preventDefault();
 
+  const folderSection = document.querySelector(
+    ".folder_section--added-folders"
+  );
   const folderNameInput = document.querySelector("#folder-name");
   const createdInput = document.querySelector("#folder-created");
   const tagsInput = document.querySelector("#folder-tags");
@@ -25,7 +29,7 @@ addButton.addEventListener("click", (event) => {
   const folderDiv = document.createElement("div");
   folderDiv.className = "added_folder--div";
   folderDiv.innerHTML = `
-    <img src="../icons_and_images/folderPix.png" class="added_folder--img" />
+    <img src="../icons_and_images/folderPix.png" class="added_folder--img"/>
     <div class="added_folder--paragraph-container">
       <p class="added_folder--folder-name"> ${newFolder.folderName}</p>
       <p class="added_folder--created">created: ${newFolder.created}</p>
@@ -44,6 +48,9 @@ addButton.addEventListener("click", (event) => {
   mainSection.style.opacity = 1;
   mainWordingSection.style.visibility = "hidden";
 });
+const test = function () {
+  console.log(document.querySelector(".added_folder--img"));
+};
 
 // retrieve the name from localStorage
 const name = localStorage.getItem("name");
