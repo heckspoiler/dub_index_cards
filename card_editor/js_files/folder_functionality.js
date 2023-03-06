@@ -1,8 +1,14 @@
+class Folder {
+  constructor(folderName, topic, created, tags) {
+    this.folderName = folderName;
+    this.topic = topic;
+    this.created = created;
+    this.tags = tags;
+  }
+}
 addButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const folderDiv = document.createElement("div");
-  folderDiv.className = "added_folder--div";
   const folderNameInput = document.querySelector("#folder-name");
   const topicInput = document.querySelector("#folder-topic");
   const createdInput = document.querySelector("#folder-created");
@@ -11,28 +17,32 @@ addButton.addEventListener("click", (event) => {
   const options = { day: "numeric", month: "numeric", year: "numeric" };
   const formattedDate = date.toLocaleDateString("en-US", options);
 
-  console.log(createdInput);
+  const newFolder = new Folder(
+    folderNameInput.value.toUpperCase(),
+    topicInput.value,
+    formattedDate,
+    tagsInput.value.toLowerCase()
+  );
 
+  // append the new folder to the DOM
+  const folderDiv = document.createElement("div");
+  folderDiv.className = "added_folder--div";
   folderDiv.innerHTML = `
-        <img src="../icons_and_images/folderPix.png" class="added_folder--img" />
-        <div class="added_folder--paragraph-container">
-          <p class="added_folder--folder-name"> ${folderNameInput.value.toUpperCase()}</p>
-          <p class="added_folder--topic"> ${topicInput.value}</p>
-          <p class="added_folder--created">created: ${formattedDate}</p>
-          <p class="added_folder--tags"> ${tagsInput.value.toLowerCase()}</p>
-        </div>
-      `;
+    <img src="../icons_and_images/folderPix.png" class="added_folder--img" />
+    <div class="added_folder--paragraph-container">
+      <p class="added_folder--folder-name"> ${newFolder.folderName}</p>
+      <p class="added_folder--topic"> ${newFolder.topic}</p>
+      <p class="added_folder--created">created: ${newFolder.created}</p>
+      <p class="added_folder--tags"> ${newFolder.tags}</p>
+    </div>
+  `;
+  folderSection.insertBefore(folderDiv, folderSection.firstElementChild);
 
+  // clear the input fields
   folderNameInput.value = "";
   topicInput.value = "";
   createdInput.value = "";
   tagsInput.value = "";
-
-  if (folderSection.children.length === 0) {
-    folderSection.appendChild(folderDiv);
-  } else {
-    folderSection.insertBefore(folderDiv, folderSection.firstElementChild);
-  }
 
   formSection.style.visibility = "hidden";
   plusSign.style.visibility = "visible";
