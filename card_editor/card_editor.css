@@ -266,6 +266,7 @@ body {
   background: -webkit-linear-gradient(top right, #3bdc1d, #fbd306);
   background: -moz-linear-gradient(top right, #3bdc1d, #fbd306);
   background: linear-gradient(to bottom left, #3bdc1d, #fbd306);
+  opacity: 0.8;
   width: 60vw;
   height: 80vh;
   z-index: 10000;
