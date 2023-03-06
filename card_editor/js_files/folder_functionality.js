@@ -1,7 +1,6 @@
 class Folder {
-  constructor(folderName, topic, created, tags) {
+  constructor(folderName, created, tags) {
     this.folderName = folderName;
-    this.topic = topic;
     this.created = created;
     this.tags = tags;
   }
@@ -10,7 +9,6 @@ addButton.addEventListener("click", (event) => {
   event.preventDefault();
 
   const folderNameInput = document.querySelector("#folder-name");
-  const topicInput = document.querySelector("#folder-topic");
   const createdInput = document.querySelector("#folder-created");
   const tagsInput = document.querySelector("#folder-tags");
   const date = new Date(createdInput.value);
@@ -19,7 +17,6 @@ addButton.addEventListener("click", (event) => {
 
   const newFolder = new Folder(
     folderNameInput.value.toUpperCase(),
-    topicInput.value,
     formattedDate,
     tagsInput.value.toLowerCase()
   );
@@ -31,7 +28,6 @@ addButton.addEventListener("click", (event) => {
     <img src="../icons_and_images/folderPix.png" class="added_folder--img" />
     <div class="added_folder--paragraph-container">
       <p class="added_folder--folder-name"> ${newFolder.folderName}</p>
-      <p class="added_folder--topic"> ${newFolder.topic}</p>
       <p class="added_folder--created">created: ${newFolder.created}</p>
       <p class="added_folder--tags"> ${newFolder.tags}</p>
     </div>
@@ -40,7 +36,6 @@ addButton.addEventListener("click", (event) => {
 
   // clear the input fields
   folderNameInput.value = "";
-  topicInput.value = "";
   createdInput.value = "";
   tagsInput.value = "";
 
