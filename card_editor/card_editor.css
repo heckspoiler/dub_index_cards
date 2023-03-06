@@ -217,7 +217,8 @@ body {
     position:absolute;
     z-index: 1000;
     visibility: visible;
-    height: 100%;
+    min-height: 80%;
+    max-height: 100%;
     width: 80vw;
     margin-left: 10vw;
     margin-top: 27vh;
@@ -225,6 +226,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid white;
+    overflow: auto;
+
+
    
     
 
@@ -241,8 +245,8 @@ body {
 
 .added_folder--div img {
     position: absolute;
-    height: 45%;
-    width: 55%;
+    height:11rem;
+    width: 15rem;
     margin-top: 2vh;
 
 }
