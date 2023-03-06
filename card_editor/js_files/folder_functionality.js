@@ -48,9 +48,6 @@ addButton.addEventListener("click", (event) => {
   mainSection.style.opacity = 1;
   mainWordingSection.style.visibility = "hidden";
 });
-const test = function () {
-  console.log(document.querySelector(".added_folder--img"));
-};
 
 // retrieve the name from localStorage
 const name = localStorage.getItem("name");
