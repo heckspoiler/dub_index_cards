@@ -179,6 +179,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
+    visibility: hidden;
 
 }
 
@@ -219,12 +220,12 @@ body {
     height: 100%;
     width: 80vw;
     margin-left: 10vw;
-    margin-top: 32vh;
+    margin-top: 27vh;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: ;
+    grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid white;
+   
     
 
 }
@@ -234,16 +235,15 @@ body {
 .added_folder--div {
     position: relative;
     display: flex;
-    border: 1px solid green;
-    height: 70%;
+    height: 100%;
 
 }
 
 .added_folder--div img {
     position: absolute;
-    height: 60%;
-    width: 60%;
-    margin-top: 5vh;
+    height: 45%;
+    width: 55%;
+    margin-top: 2vh;
 
 }
 
@@ -253,8 +253,12 @@ body {
     position: absolute;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10vh;
-    margin-left: 18vw;
+    margin-top: 4vh;
+    margin-left: 16vw;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    gap: 10px;
 
 
 }
@@ -265,11 +269,10 @@ body {
     display: flex;
     visibility: hidden;
     opacity: 0;
-    /* Created with https://www.css-gradient.com */
-background: #3BDC1D;
-background: -webkit-linear-gradient(top right, #3BDC1D, #FBD306);
-background: -moz-linear-gradient(top right, #3BDC1D, #FBD306);
-background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
+    background: #3BDC1D;
+    background: -webkit-linear-gradient(top right, #3BDC1D, #FBD306);
+    background: -moz-linear-gradient(top right, #3BDC1D, #FBD306);
+    background: linear-gradient(to bottom left, #3BDC1D, #FBD306);
     width: 60vw;
     height: 80vh;
     z-index: 10000;
