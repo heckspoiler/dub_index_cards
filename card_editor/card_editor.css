@@ -179,7 +179,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    visibility: hidden;
+
 
 }
 
@@ -224,6 +224,7 @@ body {
     margin-top: 27vh;
     border-radius: 10px;
     display: grid;
+    gap: 5rem;
     grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid white;
     overflow: auto;
