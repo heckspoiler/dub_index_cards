@@ -5,7 +5,7 @@ addButton.addEventListener("click", (event) => {
   folderDiv.className = "added_folder--div";
   const folderNameInput = document.querySelector("#folder-name");
   const topicInput = document.querySelector("#folder-topic");
-  const chapterInput = document.querySelector("#folder-chapter");
+  const createdInput = document.querySelector("#folder-created");
   const tagsInput = document.querySelector("#folder-tags");
 
   folderDiv.innerHTML = `
@@ -13,14 +13,14 @@ addButton.addEventListener("click", (event) => {
         <div class="added_folder--paragraph-container">
           <p class="added_folder--folder-name">${folderNameInput.value.toUpperCase()}</p>
           <p class="added_folder--topic">${topicInput.value}</p>
-          <p class="added_folder--chapter">${chapterInput.value}</p>
+          <p class="added_folder--created">created: ${createdInput.value}</p>
           <p class="added_folder--tags">${tagsInput.value.toLowerCase()}</p>
         </div>
       `;
 
   folderNameInput.value = "";
   topicInput.value = "";
-  chapterInput.value = "";
+  createdInput.value = "";
   tagsInput.value = "";
 
   if (folderSection.children.length === 0) {
@@ -35,3 +35,9 @@ addButton.addEventListener("click", (event) => {
   mainWordingSection.style.visibility = "hidden";
   inputFields.value = "";
 });
+
+// retrieve the name from localStorage
+const name = localStorage.getItem("name");
+
+// set the title
+document.querySelector(".card_editor--main-title").innerHTML = `Hello, ${name}`;

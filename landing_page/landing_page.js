@@ -215,5 +215,9 @@ animateIntro();
 
 function submitForm(event) {
   event.preventDefault();
+  const name = document.getElementById("username").value;
+
+  // store the name in localStorage
+  localStorage.setItem("name", name);
   window.location.href = "../card_editor/card_editor.html";
 }

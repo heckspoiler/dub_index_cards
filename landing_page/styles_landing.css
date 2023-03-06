@@ -404,12 +404,24 @@ body {
   line-height: 2em;
   margin-top: -5vh;
   margin-bottom: 5vh;
+  font-size: 1.2rem;
+}
+
+.landing__page--login--section input {
+  padding-left: 10px;
 }
 
 .login_section--form {
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 70%;
+  width: 20%;
+
+  justify-content: space-evenly;
+}
+
+.login_section--form button {
+  width: 30%;
 }
 
 #username {
