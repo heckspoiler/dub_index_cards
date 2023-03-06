@@ -7,14 +7,19 @@ addButton.addEventListener("click", (event) => {
   const topicInput = document.querySelector("#folder-topic");
   const createdInput = document.querySelector("#folder-created");
   const tagsInput = document.querySelector("#folder-tags");
+  const date = new Date(createdInput.value);
+  const options = { day: "numeric", month: "numeric", year: "numeric" };
+  const formattedDate = date.toLocaleDateString("en-US", options);
+
+  console.log(createdInput);
 
   folderDiv.innerHTML = `
         <img src="../icons_and_images/folderPix.png" class="added_folder--img" />
         <div class="added_folder--paragraph-container">
-          <p class="added_folder--folder-name">${folderNameInput.value.toUpperCase()}</p>
-          <p class="added_folder--topic">${topicInput.value}</p>
-          <p class="added_folder--created">created: ${createdInput.value}</p>
-          <p class="added_folder--tags">${tagsInput.value.toLowerCase()}</p>
+          <p class="added_folder--folder-name"> ${folderNameInput.value.toUpperCase()}</p>
+          <p class="added_folder--topic"> ${topicInput.value}</p>
+          <p class="added_folder--created">created: ${formattedDate}</p>
+          <p class="added_folder--tags"> ${tagsInput.value.toLowerCase()}</p>
         </div>
       `;
 
@@ -33,7 +38,6 @@ addButton.addEventListener("click", (event) => {
   plusSign.style.visibility = "visible";
   mainSection.style.opacity = 1;
   mainWordingSection.style.visibility = "hidden";
-  inputFields.value = "";
 });
 
 // retrieve the name from localStorage
